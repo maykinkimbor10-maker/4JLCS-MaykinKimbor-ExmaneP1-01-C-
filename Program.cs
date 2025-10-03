@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 abstract class Animal
 {
@@ -41,12 +41,7 @@ class Anfibio : Animal
 
     public override string Clasificacion(int x, int y)
     {
-        int resultado = 1;
-        for (int i = 0; i < y; i++)
-        {
-            resultado *= x;
-        }
-        return $"Potencia: {x} ^ {y} = {resultado}";
+        return $"Multiplicacion: {x} * {y} = {x * y}";
     }
 }
 
